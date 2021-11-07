@@ -65,7 +65,7 @@ public class EntrepriseServiceImpl implements IEntrepriseService {
 	}
 
 	@Override
-	public Entreprise retrieveEntreprise(int id) {
+	public Entreprise retrieveEntreprise(int id) { 
 		return entrepriseRepository.findById(id).get();
 		  
 	}

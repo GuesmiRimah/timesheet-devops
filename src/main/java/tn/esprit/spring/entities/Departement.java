@@ -29,7 +29,7 @@ public class Departement implements Serializable {
 	//@JsonManagedReference 
 	@JsonIgnore
 	@ManyToMany(fetch=FetchType.EAGER, cascade=CascadeType.ALL)
-	private List<Employe> employes;
+	//private List<Employe> employes;
 	 
 	@ManyToOne
 	private Entreprise entreprise;
@@ -58,13 +58,13 @@ public class Departement implements Serializable {
 		this.name = name;
 	}
 
-	public List<Employe> getEmployes() {
-		return employes;
-	}
+	//public List<Employe> getEmployes() {
+		//return employes;
+	//}
 
-	public void setEmployes(List<Employe> employes) {
-		this.employes = employes;
-	}
+	//public void setEmployes(List<Employe> employes) {
+		//this.employes = employes;
+	//}
 
 	public Entreprise getEntreprise() {
 		return entreprise;
