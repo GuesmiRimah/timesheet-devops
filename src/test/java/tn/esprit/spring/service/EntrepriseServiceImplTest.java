@@ -28,7 +28,7 @@ public class EntrepriseServiceImplTest {
 	
 	public void testRetrieveAllEntreprises() {
 	List<Entreprise> listEntreprises = es.retrieveAllEntreprises();
-	Assertions.assertEquals(2, listEntreprises.size());
+	Assertions.assertEquals(3, listEntreprises.size());
 	}
 	
 	
@@ -48,7 +48,7 @@ public class EntrepriseServiceImplTest {
 	}
 	
 	public void testDeleteEntreprise(){
-		es.deleteEntreprise(2);
+		es.deleteEntreprise(4);
 		Assertions.assertNull(es.retrieveEntreprise(5));
 		
 	}	
