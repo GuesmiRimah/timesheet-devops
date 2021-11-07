@@ -28,7 +28,7 @@ public class EntrepriseServiceImplTest {
 	
 	public void testRetrieveAllEntreprises() {
 	List<Entreprise> listEntreprises = es.retrieveAllEntreprises();
-	Assertions.assertEquals(0, listEntreprises.size());
+	Assertions.assertEquals(2, listEntreprises.size());
 	}
 	
 	
